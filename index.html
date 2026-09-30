@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Bean & Bloom - a warm modern café for coffee, conversations and delicious bites.">
+  <title>Bean & Bloom | Café</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="site-header" id="home">
+    <nav class="navbar container" aria-label="Main navigation">
+      <a class="brand" href="#home" aria-label="Bean and Bloom home">
+        <span class="brand-mark">B&B</span>
+        <span>
+          <strong>Bean &amp; Bloom</strong>
+          <small>COFFEE • KITCHEN</small>
+        </span>
+      </a>
+
+      <button class="menu-toggle" id="menuToggle" aria-label="Open navigation" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+
+      <div class="nav-links" id="navLinks">
+        <a class="active" href="#home">Home</a>
+        <a href="#menu">Menu</a>
+        <a href="#about">About</a>
+        <a href="#reviews">Reviews</a>
+        <a href="#contact">Contact</a>
+        <a class="nav-cta" href="#booking">Book a Table</a>
+      </div>
+    </nav>
+
+    <section class="hero container">
+      <div class="hero-copy">
+        <p class="eyebrow"><span></span> Your everyday café escape</p>
+        <h1>Where every cup<br>tells a <em>story.</em></h1>
+        <p class="hero-description">
+          Thoughtfully brewed coffee, fresh bites and a cozy space made for slow mornings,
+          good conversations and little moments worth remembering.
+        </p>
+
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="#menu">Explore Menu <span>→</span></a>
+          <a class="btn btn-secondary" href="#booking">Book a Table</a>
+        </div>
+
+        <div class="hero-meta">
+          <div><strong>4.9/5</strong><span>Guest rating</span></div>
+          <div><strong>25+</strong><span>Fresh favourites</span></div>
+          <div><strong>7 AM</strong><span>We open daily</span></div>
+        </div>
+      </div>
+
+      <div class="hero-visual">
+        <div class="hero-image-wrap">
+          <img src="images/coffee-open-daily.jpg" alt="Latte served in a cozy Bean & Bloom café" class="hero-image">
+          <div class="hero-image-badge">
+            <span>Today's mood</span>
+            <strong>Good coffee.<br>Better moments.</strong>
+          </div>
+        </div>
+      </div>
+    </section>
+  </header>
+
+  <section class="tagline-section" aria-label="Bean & Bloom tagline">
+    <div class="container tagline-card">
+      <span class="tagline-kicker">BEAN & BLOOM</span>
+      <div class="tagline-display" aria-live="polite">
+        <span id="rotatingText"></span><span class="typing-cursor" aria-hidden="true"></span>
+      </div>
+      <span class="tagline-leaf">✦</span>
+    </div>
+  </section>
+
+  <main>
+    <section class="section menu-section" id="menu">
+      <div class="container">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow"><span></span> From our kitchen</p>
+            <h2>Favourites made<br><em>for you.</em></h2>
+          </div>
+          <p>Simple ingredients, careful preparation and flavours you will want to come back for.</p>
+        </div>
+
+        <div class="menu-grid">
+          <article class="menu-card">
+            <div class="food-photo"><img src="images/signature-latte.jpg" alt="Signature Latte with latte art"></div>
+            <div class="menu-card-top"><span>01</span><b>Signature Latte</b></div>
+            <p>Silky espresso with steamed milk and our house vanilla blend.</p>
+            <div class="menu-bottom"><strong>₹149</strong><button class="add-btn" type="button" aria-label="Add Signature Latte">+</button></div>
+          </article>
+          <article class="menu-card featured">
+            <div class="food-photo"><img src="images/butter-croissant.jpg" alt="Golden butter croissant"></div>
+            <div class="menu-card-top"><span>02</span><b>Butter Croissant</b></div>
+            <p>Golden, flaky and freshly baked for a buttery first bite.</p>
+            <div class="menu-bottom"><strong>₹129</strong><button class="add-btn" type="button" aria-label="Add Butter Croissant">+</button></div>
+          </article>
+          <article class="menu-card">
+            <div class="food-photo"><img src="images/chocolate-brownie.jpg" alt="Chocolate brownie with chocolate drizzle"></div>
+            <div class="menu-card-top"><span>03</span><b>Chocolate Brownie</b></div>
+            <p>Rich, fudgy brownie finished with a warm chocolate drizzle.</p>
+            <div class="menu-bottom"><strong>₹139</strong><button class="add-btn" type="button" aria-label="Add Chocolate Brownie">+</button></div>
+          </article>
+          <article class="menu-card">
+            <div class="food-photo"><img src="images/creamy-pasta.jpg" alt="Creamy herb pasta"></div>
+            <div class="menu-card-top"><span>04</span><b>Creamy Pasta</b></div>
+            <p>Comforting pasta tossed in a creamy herb sauce with fresh vegetables.</p>
+            <div class="menu-bottom"><strong>₹219</strong><button class="add-btn" type="button" aria-label="Add Creamy Pasta">+</button></div>
+          </article>
+          <article class="menu-card">
+            <div class="food-photo"><img src="images/grilled-cheese.jpg" alt="Grilled cheese sandwich with melted cheese"></div>
+            <div class="menu-card-top"><span>05</span><b>Grilled Cheese</b></div>
+            <p>Golden toasted bread with a warm, gooey cheese centre.</p>
+            <div class="menu-bottom"><strong>₹179</strong><button class="add-btn" type="button" aria-label="Add Grilled Cheese">+</button></div>
+          </article>
+          <article class="menu-card">
+            <div class="food-photo"><img src="images/french-fries.jpg" alt="Crispy French fries with dip"></div>
+            <div class="menu-card-top"><span>06</span><b>Crispy Fries</b></div>
+            <p>Golden, crisp fries served with our signature café dip.</p>
+            <div class="menu-bottom"><strong>₹129</strong><button class="add-btn" type="button" aria-label="Add Crispy Fries">+</button></div>
+          </article>
+          <article class="menu-card">
+            <div class="food-photo"><img src="images/cold-coffee.jpg" alt="Cold coffee with whipped cream and chocolate drizzle"></div>
+            <div class="menu-card-top"><span>07</span><b>Cold Coffee</b></div>
+            <p>Chilled, creamy coffee finished with a chocolate drizzle.</p>
+            <div class="menu-bottom"><strong>₹159</strong><button class="add-btn" type="button" aria-label="Add Cold Coffee">+</button></div>
+          </article>
+          <article class="menu-card">
+            <div class="food-photo"><img src="images/cappuccino.jpg" alt="Cappuccino with latte art"></div>
+            <div class="menu-card-top"><span>08</span><b>Cappuccino</b></div>
+            <p>Bold espresso, velvety foam and a classic latte-art finish.</p>
+            <div class="menu-bottom"><strong>₹149</strong><button class="add-btn" type="button" aria-label="Add Cappuccino">+</button></div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="visual-story-section" aria-label="Café atmosphere">
+      <div class="container visual-story-grid">
+        <div class="community-photo">
+          <img src="images/coffeegram.jpg" alt="Coffee, pastry and a phone on a café table">
+          <div class="visual-caption"><span>COFFEeGRAM COMMUNITY</span><strong>Share your little Bean & Bloom moments.</strong><small>#BeanAndBloom</small></div>
+        </div>
+        <div class="corner-photo">
+          <img src="images/interior.jpg" alt="Warm and cozy Bean & Bloom café interior">
+          <div class="corner-caption"><span>OUR SPACE</span><strong>Little warmth in every corner.</strong></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section story-section" id="about">
+      <div class="container story-grid">
+        <div class="story-visual">
+          <div class="story-photo">
+            <div class="photo-overlay">
+              <span>Since</span><strong>2024</strong>
+            </div>
+          </div>
+          <div class="story-stamp">BLOOM<br><small>WITH EVERY SIP</small></div>
+        </div>
+        <div class="story-copy">
+          <p class="eyebrow"><span></span> Our story</p>
+          <h2>A little warmth<br>in every <em>corner.</em></h2>
+          <p>
+            Bean &amp; Bloom was created around one simple idea: a café should feel like
+            your favourite place, even on your first visit.
+          </p>
+          <p>
+            We pair carefully selected beans with fresh comfort food and a calm,
+            welcoming atmosphere. Come for the coffee, stay for the feeling.
+          </p>
+          <div class="story-points">
+            <div><span>✓</span><strong>Fresh every day</strong></div>
+            <div><span>✓</span><strong>Locally inspired</strong></div>
+            <div><span>✓</span><strong>Made to order</strong></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section benefits-section">
+      <div class="container">
+        <div class="center-heading">
+          <p class="eyebrow"><span></span> Why Bean &amp; Bloom</p>
+          <h2>Good coffee. <em>Good mood.</em></h2>
+        </div>
+        <div class="benefits-grid">
+          <article><div class="benefit-icon">✦</div><h3>Freshly Roasted</h3><p>Small-batch beans selected for a smooth, balanced cup.</p></article>
+          <article><div class="benefit-icon">♡</div><h3>Made with Care</h3><p>Every plate and cup is prepared with attention to detail.</p></article>
+          <article><div class="benefit-icon">⌂</div><h3>Cozy Atmosphere</h3><p>A relaxed space for work, catch-ups, dates and quiet time.</p></article>
+          <article><div class="benefit-icon">◌</div><h3>Easy on the Planet</h3><p>Thoughtful packaging and small choices that reduce waste.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section reviews-section" id="reviews">
+      <div class="container">
+        <div class="section-heading">
+          <div><p class="eyebrow"><span></span> Guest notes</p><h2>Made for moments<br>you'll <em>remember.</em></h2></div>
+          <div class="review-score"><strong>4.9</strong><span>★★★★★</span><small>from our guests</small></div>
+        </div>
+        <div class="reviews-grid">
+          <article class="review-card"><div class="stars">★★★★★</div><p>“The latte was beautifully smooth and the space is perfect for a slow Sunday morning.”</p><div class="reviewer"><span>AS</span><div><strong>Ananya S.</strong><small>Regular guest</small></div></div></article>
+          <article class="review-card"><div class="stars">★★★★★</div><p>“Lovely food, warm service and a very calm atmosphere. The cheesecake is a must-try!”</p><div class="reviewer"><span>RK</span><div><strong>Rohan K.</strong><small>Weekend guest</small></div></div></article>
+          <article class="review-card"><div class="stars">★★★★★</div><p>“A beautiful little café with great coffee. I can easily spend a few hours here.”</p><div class="reviewer"><span>PM</span><div><strong>Priya M.</strong><small>Coffee lover</small></div></div></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="booking-section" id="booking">
+      <div class="container booking-card">
+        <div>
+          <p class="eyebrow light"><span></span> Your table is waiting</p>
+          <h2>Make room for<br><em>good moments.</em></h2>
+          <p>Planning a catch-up, date or quiet coffee? Reserve your favourite table in a few clicks.</p>
+        </div>
+        <a class="btn btn-light" href="#contact">Reserve a Table <span>→</span></a>
+      </div>
+    </section>
+
+    <section class="section contact-section" id="contact">
+      <div class="container contact-grid">
+        <div class="contact-copy">
+          <p class="eyebrow"><span></span> Say hello</p>
+          <h2>Let's plan your<br><em>next coffee.</em></h2>
+          <p>Have a question, feedback or a special request? Send us a message and our team will get back to you.</p>
+          <div class="contact-details">
+            <div><span>⌖</span><div><strong>Visit us</strong><p>12 Bloom Street, Raipur</p></div></div>
+            <div><span>☎</span><div><strong>Call us</strong><p>+91 98765 43210</p></div></div>
+            <div><span>✉</span><div><strong>Email</strong><p>hello@beanandbloom.example</p></div></div>
+          </div>
+        </div>
+
+        <form class="contact-form" id="contactForm" novalidate>
+          <div class="form-row">
+            <label>Name<input type="text" id="name" name="name" placeholder="Your name" required minlength="2"></label>
+            <label>Email<input type="email" id="email" name="email" placeholder="you@example.com" required></label>
+          </div>
+          <div class="form-row">
+            <label>Phone<input type="tel" id="phone" name="phone" placeholder="+91 98765 43210" required pattern="[0-9+\-\s()]{10,}"></label>
+            <label>Guests<select id="guests" name="guests" required><option value="">Select</option><option>1–2 guests</option><option>3–4 guests</option><option>5–8 guests</option><option>9+ guests</option></select></label>
+          </div>
+          <label>Message<textarea id="message" name="message" rows="5" placeholder="Tell us how we can help..." required minlength="10"></textarea></label>
+          <button class="btn btn-primary submit-btn" type="submit">Send Message <span>→</span></button>
+          <p class="form-message" id="formMessage" role="status"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-top">
+      <a class="brand footer-brand" href="#home"><span class="brand-mark">B&B</span><span><strong>Bean &amp; Bloom</strong><small>COFFEE • KITCHEN</small></span></a>
+      <div class="footer-links"><a href="#home">Home</a><a href="#menu">Menu</a><a href="#about">About</a><a href="#contact">Contact</a></div>
+      <div class="socials"><a href="#" aria-label="Instagram">ig</a><a href="#" aria-label="Facebook">f</a><a href="#" aria-label="X">x</a></div>
+    </div>
+    <div class="container footer-bottom"><span>© 2026 Bean &amp; Bloom. Crafted with care.</span><span>Open daily · 7:00 AM – 10:00 PM</span></div>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
